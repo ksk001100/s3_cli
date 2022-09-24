@@ -15,7 +15,7 @@ pub(crate) fn command() -> Command {
         .flag(
             Flag::new("output", FlagType::String)
                 .alias("o")
-                .usage("-o, --output <PATH> : Specify output directory"),
+                .description("Specify output directory"),
         )
         .action(action)
 }
